@@ -1,0 +1,17 @@
+.Sidebar{
+    float:left;
+    width: 15rem;
+    height:100%;
+    position:fixed;
+    background-color: cornsilk;
+}
+
+.Sidebar a{
+    display:block;
+}
+
+.Header{
+    width:100%;
+    background-color: cornsilk;
+    height: 5rem;
+}
