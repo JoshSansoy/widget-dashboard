@@ -7,7 +7,7 @@ function ToDo(){
     const [name, setName] = useState('');
 
     function addTask(){
-        if(name != ''){
+        if(name !== ''){
             setTasks([...tasks,
                 <div className={styles.Task}>
                     <p>{name}</p>

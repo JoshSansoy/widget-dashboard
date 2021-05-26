@@ -12,6 +12,8 @@ function App() {
   function manageWidgets(widget){
 
     switch(widget){
+        default:
+          return null
         case 'calculator':
           return setActiveWidgets([...activeWidgets, <Calculator/>])
         case 'todo':
