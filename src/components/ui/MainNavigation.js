@@ -14,11 +14,11 @@ function MainNavigation(props) {
                         <h3>Controls</h3>
                         <div>
                             <p>Calculator</p>
-                            <button onClick={props.manageWidgets}>+</button>
+                            <button onClick={() => props.manageWidgets('calculator')}>+</button>
                         </div>
                         <div>
                         <p>To-Do</p> 
-                            <button>+</button>
+                            <button onClick={() => props.manageWidgets('todo')}>+</button>
                         </div>
                     </div>
                 </div>

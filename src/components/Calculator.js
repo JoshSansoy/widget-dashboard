@@ -10,6 +10,15 @@ function Calculator(){
         setDisplay(display + n)
     }
 
+    function calculate(){
+        try{
+            setDisplay(eval(display) || "")
+        }catch(e){
+            setDisplay("error")
+        }
+
+    }
+
     let numbers = [];
     for (let i = 1; i < 10; i++) {   
         numbers.push(<button onClick={() => buttonClick(i)} key={i}>{i}</button>)
@@ -20,8 +29,8 @@ function Calculator(){
     }
 
     let operators = [
-        <button onClick={() => buttonClick('%')}>%</button>,
-        <button onClick={() => buttonClick('X')}>X</button>,
+        <button onClick={() => buttonClick('/')}>%</button>,
+        <button onClick={() => buttonClick('*')}>X</button>,
         <button onClick={() => buttonClick('-')}>-</button>,
         <button onClick={() => buttonClick('+')}>+</button>
     ]
@@ -39,7 +48,7 @@ function Calculator(){
                     </div>
                     <div className={Styles.Controls}>
                         <button onClick={()=> setDisplay("")}>AC</button>
-                        <button>=</button>
+                        <button onClick={calculate}>=</button>
                     </div>
                 </div>
             </div>
