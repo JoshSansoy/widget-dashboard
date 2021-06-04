@@ -11,7 +11,7 @@ function MainNavigation(props) {
                 </div>
                 <div className={Styles.Sidebar}>
                     <div className={Styles.Controls}>
-                        <h3>Controls</h3>
+                        <h3>Widgets</h3>
                         <div>
                             <p>Calculator</p>
                             <button onClick={() => props.manageWidgets('calculator')}>+</button>

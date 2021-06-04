@@ -1,10 +1,11 @@
 .Wrapper{
     width:15rem;
     height:20rem;
-    background-color: cornsilk;
+    background-color: lightblue;
     margin-left: 2rem;
     margin-top: 2rem;
     border-radius: 10px;
+    border: 5px solid slateblue;
 }
 
 .Calculator{
@@ -23,7 +24,7 @@
     display:block;
     width:7rem;
     float:left;
-    background-color: white;
+    background-color: slategray;
     border-radius: 10px;
     padding:0.2rem;
     border: 2px solid black;
@@ -60,7 +61,10 @@
     justify-content: space-between;
     width:100%;
     float:left;
+    
 }
+
+
 
 .Controls button{
     font-size:1.3rem;

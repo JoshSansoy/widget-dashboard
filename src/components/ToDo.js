@@ -26,8 +26,10 @@ function ToDo(){
                 <div className={styles.TaskView}>
                     {tasks}
                 </div>
-                <input type="text" value={name} onChange={updateName}></input>
-                <button onClick={addTask}>+</button>
+                <div className={styles.Controls}>
+                    <input type="text" value={name} onChange={updateName}></input>
+                    <button onClick={addTask}>+</button>
+                </div>
             </div>
         </div>
     )
